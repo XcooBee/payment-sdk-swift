@@ -1,2 +1,3 @@
-# payment-sdk-swift
-XcooBee Payment SDK for Swift and iOS
+# XcooBee Payment SDK for Swift and iOS
+
+payment-sdk-swift
