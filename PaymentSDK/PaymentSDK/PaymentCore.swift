@@ -84,4 +84,24 @@ public class PaymentCore {
     func createExternalReferenceQR(priceCode: String, size: Int, config: Config) -> UIImage? {
         return nil
     }
+    
+    private func generateQRCode(from string: String) -> UIImage? {
+        let data = string.data(using: String.Encoding.ascii)
+        
+        if let filter = CIFilter(name: "CIQRCodeGenerator") {
+            filter.setValue(data, forKey: "inputMessage")
+            let scaleValue = scaleSize(value: filter.outputImage?.extent.height)
+            let transform = CGAffineTransform(scaleX: scaleValue, y: scaleValue)
+            if let output = filter.outputImage?.transformed(by: transform) {
+                return UIImage(ciImage: output)
+            }
+        }
+        
+        return nil
+    }
+    
+    private func scaleSize(value: CGFloat?) -> CGFloat {
+        let scale = 150 / (value ?? 0)
+        return scale
+    }
 }
