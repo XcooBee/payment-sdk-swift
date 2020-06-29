@@ -8,8 +8,16 @@
 
 import Foundation
 
-struct InputModel {
-    let amount: Double?
+public struct InputModel {
+    let amount: Double
     let tax: Double?
     let reference: String?
+    let config: XcooBeePayConfig?
+    
+    public init(amount: Double, tax: Double? = nil, reference: String? = nil, config: XcooBeePayConfig? = nil) {
+        self.amount = amount
+        self.tax = tax
+        self.reference = reference
+        self.config = config
+    }
 }
