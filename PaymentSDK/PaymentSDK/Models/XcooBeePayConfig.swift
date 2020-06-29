@@ -10,13 +10,22 @@ import Foundation
 
 public struct XcooBeePayConfig {
     let campaignId: String
-    let formId: String?
+    let formId: String
     let source: String?
     let deviceId: String?
     let xcoobeeDeviceId: String?
     
+    /**
+    - Parameters:
+       - campaignId: XcooBee campaign id.
+       - formId: Form id for the campaign.
+       - deviceId: External device id.
+       - source: Source tracking reference for order.
+       - xcoobeeDeviceId: XcooBee device id. (Only available if your device is connected to XcooBee network).
+     If this is provided the “DeviceId” should not be provided. They are mutually exclusive and only XcooBeeDeviceId will be used.
+    */
     public init(campaignId: String,
-                formId: String? = nil,
+                formId: String,
                 source: String? = nil,
                 deviceId: String? = nil,
                 xcoobeeDeviceId: String? = nil) {

@@ -13,9 +13,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let config = XcooBeePayConfig(campaignId: "t")
+        let config = XcooBeePayConfig(campaignId: "t", formId: "t")
         PaymentCore.shared.setSystemConfig(config)
-        let input = InputModel(amount: 1)
+        let input = XcooBeeInputModel(amount: 1)
         let url = PaymentCore.shared.createSingleItemUrl(input: input)
         let urlString = url?.absoluteString ?? ""
         let index = urlString.firstIndex(of: "d")
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
             print("Decoded: \(base64Decoded ?? "")")
         }
         
-        let image = PaymentCore.shared.createSingleItemQR(input: input, size: 750)
+        let image = PaymentCore.shared.createSingleItemQR(input: input, qrConfig: XcooBeeQRConfig(size: 750))
         if let image = image {
             print(image)
         }

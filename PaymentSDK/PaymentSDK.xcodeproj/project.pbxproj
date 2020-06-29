@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		D72876CD24A9C3FC0036032C /* SecurePaySubItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72876CC24A9C3FC0036032C /* SecurePaySubItems.swift */; };
+		D72876D024AA5BD40036032C /* UrlProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72876CF24AA5BD40036032C /* UrlProvider.swift */; };
+		D72876D224AA5BE10036032C /* QRImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72876D124AA5BE10036032C /* QRImageProvider.swift */; };
+		D72876D524AA5BFF0036032C /* CIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72876D424AA5BFF0036032C /* CIImage+Extensions.swift */; };
+		D72876D724AA631E0036032C /* XcooBeeQRConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72876D624AA631E0036032C /* XcooBeeQRConfig.swift */; };
+		D72876D924AA70A10036032C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72876D824AA70A10036032C /* Constants.swift */; };
 		D7BE6B0824A8E4FE001E7AE8 /* SecurePay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6B0724A8E4FE001E7AE8 /* SecurePay.swift */; };
 		D7BE6B0A24A8EA7C001E7AE8 /* SecurePayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6B0924A8EA7C001E7AE8 /* SecurePayLogic.swift */; };
 		D7BE6B0F24A930D5001E7AE8 /* SecurePayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6B0E24A930D5001E7AE8 /* SecurePayItem.swift */; };
 		D7E73705249F838900A658D1 /* PaymentSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D7E73703249F838900A658D1 /* PaymentSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7E7370C249F83F300A658D1 /* PaymentCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E7370B249F83F300A658D1 /* PaymentCore.swift */; };
-		D7E7370F249F8C3300A658D1 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E7370E249F8C3300A658D1 /* Config.swift */; };
-		D7E73711249F946400A658D1 /* InputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E73710249F946400A658D1 /* InputModel.swift */; };
+		D7E7370F249F8C3300A658D1 /* XcooBeePayConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E7370E249F8C3300A658D1 /* XcooBeePayConfig.swift */; };
+		D7E73711249F946400A658D1 /* XcooBeeInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E73710249F946400A658D1 /* XcooBeeInputModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D72876CC24A9C3FC0036032C /* SecurePaySubItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurePaySubItems.swift; sourceTree = "<group>"; };
+		D72876CF24AA5BD40036032C /* UrlProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProvider.swift; sourceTree = "<group>"; };
+		D72876D124AA5BE10036032C /* QRImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRImageProvider.swift; sourceTree = "<group>"; };
+		D72876D424AA5BFF0036032C /* CIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+Extensions.swift"; sourceTree = "<group>"; };
+		D72876D624AA631E0036032C /* XcooBeeQRConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcooBeeQRConfig.swift; sourceTree = "<group>"; };
+		D72876D824AA70A10036032C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D7BE6B0724A8E4FE001E7AE8 /* SecurePay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurePay.swift; sourceTree = "<group>"; };
 		D7BE6B0924A8EA7C001E7AE8 /* SecurePayLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurePayLogic.swift; sourceTree = "<group>"; };
 		D7BE6B0E24A930D5001E7AE8 /* SecurePayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurePayItem.swift; sourceTree = "<group>"; };
@@ -26,8 +36,8 @@
 		D7E73703249F838900A658D1 /* PaymentSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentSDK.h; sourceTree = "<group>"; };
 		D7E73704249F838900A658D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7E7370B249F83F300A658D1 /* PaymentCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCore.swift; sourceTree = "<group>"; };
-		D7E7370E249F8C3300A658D1 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		D7E73710249F946400A658D1 /* InputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputModel.swift; sourceTree = "<group>"; };
+		D7E7370E249F8C3300A658D1 /* XcooBeePayConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcooBeePayConfig.swift; sourceTree = "<group>"; };
+		D7E73710249F946400A658D1 /* XcooBeeInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcooBeeInputModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +51,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D72876CE24AA5BC20036032C /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				D72876CF24AA5BD40036032C /* UrlProvider.swift */,
+				D72876D124AA5BE10036032C /* QRImageProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		D72876D324AA5BEF0036032C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D72876D424AA5BFF0036032C /* CIImage+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D7E736F6249F838900A658D1 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +87,8 @@
 		D7E73702249F838900A658D1 /* PaymentSDK */ = {
 			isa = PBXGroup;
 			children = (
+				D72876D324AA5BEF0036032C /* Extensions */,
+				D72876CE24AA5BC20036032C /* Providers */,
 				D7E7370D249F8C0A00A658D1 /* Models */,
 				D7E7370B249F83F300A658D1 /* PaymentCore.swift */,
 				D7E73703249F838900A658D1 /* PaymentSDK.h */,
@@ -71,12 +100,14 @@
 		D7E7370D249F8C0A00A658D1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D7E7370E249F8C3300A658D1 /* Config.swift */,
-				D7E73710249F946400A658D1 /* InputModel.swift */,
+				D7E7370E249F8C3300A658D1 /* XcooBeePayConfig.swift */,
+				D7E73710249F946400A658D1 /* XcooBeeInputModel.swift */,
 				D7BE6B0724A8E4FE001E7AE8 /* SecurePay.swift */,
 				D7BE6B0924A8EA7C001E7AE8 /* SecurePayLogic.swift */,
 				D7BE6B0E24A930D5001E7AE8 /* SecurePayItem.swift */,
 				D72876CC24A9C3FC0036032C /* SecurePaySubItems.swift */,
+				D72876D624AA631E0036032C /* XcooBeeQRConfig.swift */,
+				D72876D824AA70A10036032C /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,13 +192,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7E73711249F946400A658D1 /* InputModel.swift in Sources */,
+				D7E73711249F946400A658D1 /* XcooBeeInputModel.swift in Sources */,
+				D72876D224AA5BE10036032C /* QRImageProvider.swift in Sources */,
 				D72876CD24A9C3FC0036032C /* SecurePaySubItems.swift in Sources */,
+				D72876D024AA5BD40036032C /* UrlProvider.swift in Sources */,
+				D72876D724AA631E0036032C /* XcooBeeQRConfig.swift in Sources */,
 				D7E7370C249F83F300A658D1 /* PaymentCore.swift in Sources */,
-				D7E7370F249F8C3300A658D1 /* Config.swift in Sources */,
+				D7E7370F249F8C3300A658D1 /* XcooBeePayConfig.swift in Sources */,
 				D7BE6B0A24A8EA7C001E7AE8 /* SecurePayLogic.swift in Sources */,
+				D72876D524AA5BFF0036032C /* CIImage+Extensions.swift in Sources */,
 				D7BE6B0F24A930D5001E7AE8 /* SecurePayItem.swift in Sources */,
 				D7BE6B0824A8E4FE001E7AE8 /* SecurePay.swift in Sources */,
+				D72876D924AA70A10036032C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

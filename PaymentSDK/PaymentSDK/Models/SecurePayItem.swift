@@ -14,6 +14,13 @@ struct SecurePayItem {
     let tax: Double?
     let tip: Bool
     
+    /**
+     - Parameters:
+      - amount:  Number to pay for order.
+      - reference:  Description of order.
+      - tax: Included tax.
+      - tip: Include tip.
+     */
     init(amount: Double? = nil, reference: String? = nil, tax: Double? = nil, tip: Bool = false) {
         self.amount = amount
         self.reference = reference
