@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D72876CD24A9C3FC0036032C /* SecurePaySubItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72876CC24A9C3FC0036032C /* SecurePaySubItems.swift */; };
 		D7BE6B0824A8E4FE001E7AE8 /* SecurePay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6B0724A8E4FE001E7AE8 /* SecurePay.swift */; };
 		D7BE6B0A24A8EA7C001E7AE8 /* SecurePayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6B0924A8EA7C001E7AE8 /* SecurePayLogic.swift */; };
 		D7BE6B0F24A930D5001E7AE8 /* SecurePayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6B0E24A930D5001E7AE8 /* SecurePayItem.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D72876CC24A9C3FC0036032C /* SecurePaySubItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurePaySubItems.swift; sourceTree = "<group>"; };
 		D7BE6B0724A8E4FE001E7AE8 /* SecurePay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurePay.swift; sourceTree = "<group>"; };
 		D7BE6B0924A8EA7C001E7AE8 /* SecurePayLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurePayLogic.swift; sourceTree = "<group>"; };
 		D7BE6B0E24A930D5001E7AE8 /* SecurePayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurePayItem.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				D7BE6B0724A8E4FE001E7AE8 /* SecurePay.swift */,
 				D7BE6B0924A8EA7C001E7AE8 /* SecurePayLogic.swift */,
 				D7BE6B0E24A930D5001E7AE8 /* SecurePayItem.swift */,
+				D72876CC24A9C3FC0036032C /* SecurePaySubItems.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7E73711249F946400A658D1 /* InputModel.swift in Sources */,
+				D72876CD24A9C3FC0036032C /* SecurePaySubItems.swift in Sources */,
 				D7E7370C249F83F300A658D1 /* PaymentCore.swift in Sources */,
 				D7E7370F249F8C3300A658D1 /* Config.swift in Sources */,
 				D7BE6B0A24A8EA7C001E7AE8 /* SecurePayLogic.swift in Sources */,

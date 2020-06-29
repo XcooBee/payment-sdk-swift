@@ -13,13 +13,13 @@ struct SecurePayLogic {
     let minimum: Double?
     let maximum: Double?
     let fixed: Double?
-    let reference: String?
+    let reference: Any?
     
     init(action: SecurePayItemActions,
          minimum: Double? = nil,
          maximum: Double? = nil,
          fixed: Double? = nil,
-         reference: String? = nil ) {
+         reference: Any? = nil ) {
         self.action = action
         self.minimum = minimum
         self.maximum = maximum
