@@ -13,18 +13,7 @@
 		D7E736DC249F836F00A658D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E736DA249F836F00A658D1 /* Main.storyboard */; };
 		D7E736DE249F837000A658D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E736DD249F837000A658D1 /* Assets.xcassets */; };
 		D7E736E1249F837000A658D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E736DF249F837000A658D1 /* LaunchScreen.storyboard */; };
-		D7E736EC249F837000A658D1 /* PaymentSDKSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E736EB249F837000A658D1 /* PaymentSDKSampleTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D7E736E8249F837000A658D1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D7E736C9249F836F00A658D1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D7E736D0249F836F00A658D1;
-			remoteInfo = PaymentSDKSample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D7E736D1249F836F00A658D1 /* PaymentSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,20 +24,10 @@
 		D7E736DD249F837000A658D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7E736E0249F837000A658D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7E736E2249F837000A658D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7E736E7249F837000A658D1 /* PaymentSDKSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentSDKSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7E736EB249F837000A658D1 /* PaymentSDKSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSDKSampleTests.swift; sourceTree = "<group>"; };
-		D7E736ED249F837000A658D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D7E736CE249F836F00A658D1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D7E736E4249F837000A658D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -62,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				D7E736D3249F836F00A658D1 /* PaymentSDKSample */,
-				D7E736EA249F837000A658D1 /* PaymentSDKSampleTests */,
 				D7E736D2249F836F00A658D1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				D7E736D1249F836F00A658D1 /* PaymentSDKSample.app */,
-				D7E736E7249F837000A658D1 /* PaymentSDKSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,15 +65,6 @@
 				D7E736E2249F837000A658D1 /* Info.plist */,
 			);
 			path = PaymentSDKSample;
-			sourceTree = "<group>";
-		};
-		D7E736EA249F837000A658D1 /* PaymentSDKSampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				D7E736EB249F837000A658D1 /* PaymentSDKSampleTests.swift */,
-				D7E736ED249F837000A658D1 /* Info.plist */,
-			);
-			path = PaymentSDKSampleTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,24 +87,6 @@
 			productReference = D7E736D1249F836F00A658D1 /* PaymentSDKSample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D7E736E6249F837000A658D1 /* PaymentSDKSampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D7E736F3249F837000A658D1 /* Build configuration list for PBXNativeTarget "PaymentSDKSampleTests" */;
-			buildPhases = (
-				D7E736E3249F837000A658D1 /* Sources */,
-				D7E736E4249F837000A658D1 /* Frameworks */,
-				D7E736E5249F837000A658D1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D7E736E9249F837000A658D1 /* PBXTargetDependency */,
-			);
-			name = PaymentSDKSampleTests;
-			productName = PaymentSDKSampleTests;
-			productReference = D7E736E7249F837000A658D1 /* PaymentSDKSampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,10 +99,6 @@
 				TargetAttributes = {
 					D7E736D0249F836F00A658D1 = {
 						CreatedOnToolsVersion = 11.5;
-					};
-					D7E736E6249F837000A658D1 = {
-						CreatedOnToolsVersion = 11.5;
-						TestTargetID = D7E736D0249F836F00A658D1;
 					};
 				};
 			};
@@ -170,7 +116,6 @@
 			projectRoot = "";
 			targets = (
 				D7E736D0249F836F00A658D1 /* PaymentSDKSample */,
-				D7E736E6249F837000A658D1 /* PaymentSDKSampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -183,13 +128,6 @@
 				D7E736E1249F837000A658D1 /* LaunchScreen.storyboard in Resources */,
 				D7E736DE249F837000A658D1 /* Assets.xcassets in Resources */,
 				D7E736DC249F836F00A658D1 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D7E736E5249F837000A658D1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,23 +144,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D7E736E3249F837000A658D1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D7E736EC249F837000A658D1 /* PaymentSDKSampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D7E736E9249F837000A658D1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D7E736D0249F836F00A658D1 /* PaymentSDKSample */;
-			targetProxy = D7E736E8249F837000A658D1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D7E736DA249F836F00A658D1 /* Main.storyboard */ = {
@@ -392,48 +314,6 @@
 			};
 			name = Release;
 		};
-		D7E736F4249F837000A658D1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PaymentSDKSampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xcoobee.PaymentSDKSampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaymentSDKSample.app/PaymentSDKSample";
-			};
-			name = Debug;
-		};
-		D7E736F5249F837000A658D1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PaymentSDKSampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xcoobee.PaymentSDKSampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaymentSDKSample.app/PaymentSDKSample";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -451,15 +331,6 @@
 			buildConfigurations = (
 				D7E736F1249F837000A658D1 /* Debug */,
 				D7E736F2249F837000A658D1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D7E736F3249F837000A658D1 /* Build configuration list for PBXNativeTarget "PaymentSDKSampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D7E736F4249F837000A658D1 /* Debug */,
-				D7E736F5249F837000A658D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

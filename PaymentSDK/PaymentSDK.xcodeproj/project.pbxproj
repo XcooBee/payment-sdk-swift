@@ -17,11 +17,24 @@
 		D7BE6B0A24A8EA7C001E7AE8 /* SecurePayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6B0924A8EA7C001E7AE8 /* SecurePayLogic.swift */; };
 		D7BE6B0F24A930D5001E7AE8 /* SecurePayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6B0E24A930D5001E7AE8 /* SecurePayItem.swift */; };
 		D7C490D124ABB6B200226D33 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D7C490D024ABB6B200226D33 /* LICENSE */; };
+		D7C4913524ABCBE000226D33 /* PaymentSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C4913424ABCBE000226D33 /* PaymentSDKTests.swift */; };
+		D7C4913724ABCBE000226D33 /* PaymentSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E73700249F838900A658D1 /* PaymentSDK.framework */; };
+		D7C4913F24ABCECF00226D33 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C4913E24ABCECF00226D33 /* ErrorHandler.swift */; };
 		D7E73705249F838900A658D1 /* PaymentSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D7E73703249F838900A658D1 /* PaymentSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7E7370C249F83F300A658D1 /* PaymentCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E7370B249F83F300A658D1 /* PaymentCore.swift */; };
 		D7E7370F249F8C3300A658D1 /* XcooBeePayConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E7370E249F8C3300A658D1 /* XcooBeePayConfig.swift */; };
 		D7E73711249F946400A658D1 /* XcooBeeInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E73710249F946400A658D1 /* XcooBeeInputModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7C4913824ABCBE000226D33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7E736F7249F838900A658D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7E736FF249F838900A658D1;
+			remoteInfo = PaymentSDK;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D72876CC24A9C3FC0036032C /* SecurePaySubItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurePaySubItems.swift; sourceTree = "<group>"; };
@@ -34,6 +47,10 @@
 		D7BE6B0924A8EA7C001E7AE8 /* SecurePayLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurePayLogic.swift; sourceTree = "<group>"; };
 		D7BE6B0E24A930D5001E7AE8 /* SecurePayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurePayItem.swift; sourceTree = "<group>"; };
 		D7C490D024ABB6B200226D33 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D7C4913224ABCBE000226D33 /* PaymentSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C4913424ABCBE000226D33 /* PaymentSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSDKTests.swift; sourceTree = "<group>"; };
+		D7C4913624ABCBE000226D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7C4913E24ABCECF00226D33 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		D7E73700249F838900A658D1 /* PaymentSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PaymentSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E73703249F838900A658D1 /* PaymentSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentSDK.h; sourceTree = "<group>"; };
 		D7E73704249F838900A658D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +60,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D7C4912F24ABCBE000226D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7C4913724ABCBE000226D33 /* PaymentSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D7E736FD249F838900A658D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,10 +95,28 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		D7C4913324ABCBE000226D33 /* PaymentSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7C4913424ABCBE000226D33 /* PaymentSDKTests.swift */,
+				D7C4913624ABCBE000226D33 /* Info.plist */,
+			);
+			path = PaymentSDKTests;
+			sourceTree = "<group>";
+		};
+		D7C4913D24ABCEB500226D33 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D7C4913E24ABCECF00226D33 /* ErrorHandler.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		D7E736F6249F838900A658D1 = {
 			isa = PBXGroup;
 			children = (
 				D7E73702249F838900A658D1 /* PaymentSDK */,
+				D7C4913324ABCBE000226D33 /* PaymentSDKTests */,
 				D7E73701249F838900A658D1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				D7E73700249F838900A658D1 /* PaymentSDK.framework */,
+				D7C4913224ABCBE000226D33 /* PaymentSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +133,7 @@
 		D7E73702249F838900A658D1 /* PaymentSDK */ = {
 			isa = PBXGroup;
 			children = (
+				D7C4913D24ABCEB500226D33 /* Helpers */,
 				D72876D324AA5BEF0036032C /* Extensions */,
 				D72876CE24AA5BC20036032C /* Providers */,
 				D7E7370D249F8C0A00A658D1 /* Models */,
@@ -129,6 +174,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D7C4913124ABCBE000226D33 /* PaymentSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7C4913A24ABCBE000226D33 /* Build configuration list for PBXNativeTarget "PaymentSDKTests" */;
+			buildPhases = (
+				D7C4912E24ABCBE000226D33 /* Sources */,
+				D7C4912F24ABCBE000226D33 /* Frameworks */,
+				D7C4913024ABCBE000226D33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7C4913924ABCBE000226D33 /* PBXTargetDependency */,
+			);
+			name = PaymentSDKTests;
+			productName = PaymentSDKTests;
+			productReference = D7C4913224ABCBE000226D33 /* PaymentSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D7E736FF249F838900A658D1 /* PaymentSDK */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7E73708249F838900A658D1 /* Build configuration list for PBXNativeTarget "PaymentSDK" */;
@@ -153,9 +216,13 @@
 		D7E736F7249F838900A658D1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = XcooBee;
 				TargetAttributes = {
+					D7C4913124ABCBE000226D33 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					D7E736FF249F838900A658D1 = {
 						CreatedOnToolsVersion = 11.5;
 						LastSwiftMigration = 1150;
@@ -176,11 +243,19 @@
 			projectRoot = "";
 			targets = (
 				D7E736FF249F838900A658D1 /* PaymentSDK */,
+				D7C4913124ABCBE000226D33 /* PaymentSDKTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D7C4913024ABCBE000226D33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D7E736FE249F838900A658D1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -192,6 +267,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D7C4912E24ABCBE000226D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7C4913524ABCBE000226D33 /* PaymentSDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D7E736FC249F838900A658D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -201,6 +284,7 @@
 				D72876CD24A9C3FC0036032C /* SecurePaySubItems.swift in Sources */,
 				D72876D024AA5BD40036032C /* UrlProvider.swift in Sources */,
 				D72876D724AA631E0036032C /* XcooBeeQRConfig.swift in Sources */,
+				D7C4913F24ABCECF00226D33 /* ErrorHandler.swift in Sources */,
 				D7E7370C249F83F300A658D1 /* PaymentCore.swift in Sources */,
 				D7E7370F249F8C3300A658D1 /* XcooBeePayConfig.swift in Sources */,
 				D7BE6B0A24A8EA7C001E7AE8 /* SecurePayLogic.swift in Sources */,
@@ -213,7 +297,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D7C4913924ABCBE000226D33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7E736FF249F838900A658D1 /* PaymentSDK */;
+			targetProxy = D7C4913824ABCBE000226D33 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		D7C4913B24ABCBE000226D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PaymentSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcoobee.PaymentSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7C4913C24ABCBE000226D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PaymentSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcoobee.PaymentSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D7E73706249F838900A658D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -386,6 +512,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D7C4913A24ABCBE000226D33 /* Build configuration list for PBXNativeTarget "PaymentSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7C4913B24ABCBE000226D33 /* Debug */,
+				D7C4913C24ABCBE000226D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D7E736FA249F838900A658D1 /* Build configuration list for PBXProject "PaymentSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -10,7 +10,7 @@ import Foundation
 /// Model for sdk configs
 public struct XcooBeePayConfig {
     let campaignId: String
-    let formId: String
+    let formId: String?
     let source: String?
     let deviceId: String?
     let xcoobeeDeviceId: String?
@@ -25,7 +25,7 @@ public struct XcooBeePayConfig {
      If this is provided the “DeviceId” should not be provided. They are mutually exclusive and only XcooBeeDeviceId will be used.
     */
     public init(campaignId: String,
-                formId: String,
+                formId: String? = nil,
                 source: String? = nil,
                 deviceId: String? = nil,
                 xcoobeeDeviceId: String? = nil) {

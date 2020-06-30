@@ -14,9 +14,9 @@ struct Constants {
     static let maxDeviceIdLength = 200
     static let maxReferenceLength = 40
     static let maxSourceLength = 10
-    static let maxSubItemAmount = 25
+    static let maxSubItemAmount = 25.0
     static let maxSubItemsRefLength = 40
     static let appUrl = "https://app.xcoobee.net"
-    static let regexpCampaingId = "/^[a-z\\d]{3}\\.[a-z\\d]{8,10}$/"
-    static let regexpFormId = "/^[a-z\\d]{3,5}$/"
+    static let regexpCampaingId = "^[a-z\\d]{3}\\.[a-z\\d]{8,10}$"
+    static let regexpFormId = "^[a-z\\d]{3,5}$"
 }
