@@ -3,11 +3,11 @@
 //  PaymentSDK
 //
 //  Created by Maxym Krutykh on 21.06.2020.
-//  Copyright © 2020 XcooBee. All rights reserved.
 //
 
 import Foundation
 
+/// Model for sdk configs
 public struct XcooBeePayConfig {
     let campaignId: String
     let formId: String

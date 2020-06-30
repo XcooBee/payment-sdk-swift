@@ -3,11 +3,11 @@
 //  PaymentSDK
 //
 //  Created by Maxym Krutykh on 29.06.2020.
-//  Copyright © 2020 XcooBee. All rights reserved.
 //
 
 import Foundation
 
+/// sdk constants
 struct Constants {
     static let maxAmount = 9999.99
     static let maxDataLength = 1800

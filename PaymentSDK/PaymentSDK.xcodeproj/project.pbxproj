@@ -16,6 +16,7 @@
 		D7BE6B0824A8E4FE001E7AE8 /* SecurePay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6B0724A8E4FE001E7AE8 /* SecurePay.swift */; };
 		D7BE6B0A24A8EA7C001E7AE8 /* SecurePayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6B0924A8EA7C001E7AE8 /* SecurePayLogic.swift */; };
 		D7BE6B0F24A930D5001E7AE8 /* SecurePayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6B0E24A930D5001E7AE8 /* SecurePayItem.swift */; };
+		D7C490D124ABB6B200226D33 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D7C490D024ABB6B200226D33 /* LICENSE */; };
 		D7E73705249F838900A658D1 /* PaymentSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D7E73703249F838900A658D1 /* PaymentSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7E7370C249F83F300A658D1 /* PaymentCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E7370B249F83F300A658D1 /* PaymentCore.swift */; };
 		D7E7370F249F8C3300A658D1 /* XcooBeePayConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E7370E249F8C3300A658D1 /* XcooBeePayConfig.swift */; };
@@ -32,6 +33,7 @@
 		D7BE6B0724A8E4FE001E7AE8 /* SecurePay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurePay.swift; sourceTree = "<group>"; };
 		D7BE6B0924A8EA7C001E7AE8 /* SecurePayLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurePayLogic.swift; sourceTree = "<group>"; };
 		D7BE6B0E24A930D5001E7AE8 /* SecurePayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurePayItem.swift; sourceTree = "<group>"; };
+		D7C490D024ABB6B200226D33 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D7E73700249F838900A658D1 /* PaymentSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PaymentSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E73703249F838900A658D1 /* PaymentSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentSDK.h; sourceTree = "<group>"; };
 		D7E73704249F838900A658D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				D7E7370B249F83F300A658D1 /* PaymentCore.swift */,
 				D7E73703249F838900A658D1 /* PaymentSDK.h */,
 				D7E73704249F838900A658D1 /* Info.plist */,
+				D7C490D024ABB6B200226D33 /* LICENSE */,
 			);
 			path = PaymentSDK;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7C490D124ABB6B200226D33 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

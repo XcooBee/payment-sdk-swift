@@ -3,11 +3,11 @@
 //  PaymentSDK
 //
 //  Created by Maxym Krutykh on 28.06.2020.
-//  Copyright © 2020 XcooBee. All rights reserved.
 //
 
 import Foundation
 
+/// Model which to specify type of payment action
 struct SecurePayLogic {
     let action: SecurePayItemActions
     let minimum: Double?

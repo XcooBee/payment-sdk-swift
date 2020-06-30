@@ -3,11 +3,11 @@
 //  PaymentSDK
 //
 //  Created by Maxym Krutykh on 28.06.2020.
-//  Copyright © 2020 XcooBee. All rights reserved.
 //
 
 import Foundation
 
+/// Model which is used to transfrom input into SecurePay model
 struct SecurePayItem {
     let amount: Double?
     let reference: String?

@@ -2,8 +2,6 @@
 //  CIImage+Extensions.swift
 //  PaymentSDK
 //
-//  Created by Maxym Krutykh on 29.06.2020.
-//  Copyright © 2020 XcooBee. All rights reserved.
 //
 
 import UIKit
