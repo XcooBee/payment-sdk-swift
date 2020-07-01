@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PaymentSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,7 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let config = XcooBeePayConfig(campaignId: "a00.aa0000000", formId: "a000")
+        PaymentCore.shared.setSystemConfig(config)
         return true
     }
 
