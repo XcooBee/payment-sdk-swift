@@ -67,7 +67,7 @@ public class PaymentCore {
     
     /// Returns a URL that can activate a total payment and predefined Tip calculator. This allows an additional Tip to be
     /// added to the total at checkout. Existing items in cart will be removed when this item is activated.
-    public func createPayUrlwithTip(input: XcooBeeInputModel) -> URL? {
+    public func createPayUrlWithTip(input: XcooBeeInputModel) -> URL? {
         let securepayItem = SecurePayItem(amount: input.amount, reference: input.reference, tax: input.tax, tip: true)
         let securePay = makeSecurePayItemTotal(securepayItem)
         let string = makePayUrl(securePay: securePay, forcedConfig: input.config)
@@ -76,8 +76,8 @@ public class PaymentCore {
     
     /// Returns a QR that can activate a total payment and predefined Tip calculator. This allows an additional Tip to be
     /// added to the total at checkout. Existing items in cart will be removed when this item is activated.
-    public func createPayQRwithTip(input: XcooBeeInputModel, qrConfig: XcooBeeQRConfig?) -> UIImage? {
-        let urlString =  createPayUrlwithTip(input: input)?.absoluteString ?? ""
+    public func createPayQRWithTip(input: XcooBeeInputModel, qrConfig: XcooBeeQRConfig?) -> UIImage? {
+        let urlString =  createPayUrlWithTip(input: input)?.absoluteString ?? ""
         return qrImageProvider.generateQRCode(from: urlString, qrConfig: qrConfig)
     }
     
@@ -120,7 +120,7 @@ public class PaymentCore {
         guard validateSubItemsWithCost(items) else { return nil }
         let securepayItem = SecurePayItem(amount: input.amount, reference: input.reference, tax: input.tax)
         let logic = SecurePayLogic(action: .addSubRadioWithExtraCost,
-                                   reference: items.map { ($0.reference, $0.amount) })
+                                   reference: items.map { [$0.reference, $0.amount] })
         let securePay = makeSecurePayItem(securepayItem, logic: [logic])
         let string = makePayUrl(securePay: [securePay], forcedConfig: input.config)
         return URL(string: string)
@@ -157,7 +157,7 @@ public class PaymentCore {
         guard validateSubItemsWithCost(items) else { return nil }
         let securepayItem = SecurePayItem(amount: input.amount, reference: input.reference, tax: input.tax)
         let logic = SecurePayLogic(action: .addSubCheckboxWithExtraCost,
-                                   reference: items.map { ($0.reference, $0.amount) })
+                                   reference: items.map { [$0.reference, $0.amount] })
         let securePay = makeSecurePayItem(securepayItem, logic: [logic])
         let string = makePayUrl(securePay: [securePay], forcedConfig: input.config)
         return URL(string: string)

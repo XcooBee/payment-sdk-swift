@@ -18,7 +18,7 @@ class QRImageProvider {
     }
     
     func generateQRCode(from string: String, qrConfig: XcooBeeQRConfig?) -> UIImage? {
-        let data = string.data(using: String.Encoding.ascii)
+        guard let data = string.data(using: String.Encoding.ascii) else { return nil }
         
         if let filter = CIFilter(name: "CIQRCodeGenerator") {
             filter.setValue(data, forKey: "inputMessage")

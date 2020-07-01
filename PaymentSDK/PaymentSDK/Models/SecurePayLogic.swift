@@ -27,13 +27,15 @@ struct SecurePayLogic {
         self.reference = reference
     }
     
-    func toJSON() -> [String: Any] {
+    func toJSON() -> [[String: Any]] {
         let dict: [String: Any?] = [SecurePayLogicParam.action.rawValue: action.rawValue,
                                     SecurePayLogicParam.minimum.rawValue: minimum,
                                     SecurePayLogicParam.maximum.rawValue: maximum,
                                     SecurePayLogicParam.fixed.rawValue: fixed,
                                     SecurePayLogicParam.reference.rawValue: reference]
-        return dict.compactMapValues { $0 }
+        return dict.compactMapValues { $0 }.sorted(by:{
+            $0.key < $1.key
+        }).map { [$0.key: $0.value] }
     }
 }
 

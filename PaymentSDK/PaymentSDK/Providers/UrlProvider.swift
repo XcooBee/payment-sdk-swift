@@ -52,7 +52,7 @@ class UrlProvider {
     }
     
     private func convertToBase64(securePay: [SecurePay]) -> String? {
-        let json = securePay.map { $0.toJSON() }
+        let json = securePay.compactMap { $0.toJSON() }
         guard let data = try? JSONSerialization.data(withJSONObject: json, options: []) else {
             return nil
         }
