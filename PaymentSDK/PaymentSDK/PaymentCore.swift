@@ -251,7 +251,7 @@ public class PaymentCore {
     private func validateSubItems(_ items: [SecurePaySubItem] ) -> Bool {
         let result = items.reduce(true) { $0 && $1.reference.count < Constants.maxSubItemsRefLength }
         if !result {
-            let message = " Sub Item Reference parameter should be less than \(Constants.maxSubItemsRefLength)"
+            let message = "Sub Item Reference parameter should be less than \(Constants.maxSubItemsRefLength)"
             errorHandler.showError(message: message)
         }
         return result
