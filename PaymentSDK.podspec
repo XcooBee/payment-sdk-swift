@@ -64,7 +64,6 @@ Test description
   #
 
   # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
   spec.ios.deployment_target = "10.0"
