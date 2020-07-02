@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		205B4D6407AF48A085D3A37B /* Pods_PaymentSDKSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DE720CA747A3C2D8DEFA45 /* Pods_PaymentSDKSample.framework */; };
 		D7E736D5249F836F00A658D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E736D4249F836F00A658D1 /* AppDelegate.swift */; };
 		D7E736D7249F836F00A658D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E736D6249F836F00A658D1 /* SceneDelegate.swift */; };
 		D7E736D9249F836F00A658D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E736D8249F836F00A658D1 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02150C585C350857AEEB3859 /* Pods-PaymentSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentSDKSample.debug.xcconfig"; path = "Target Support Files/Pods-PaymentSDKSample/Pods-PaymentSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
+		31DE720CA747A3C2D8DEFA45 /* Pods_PaymentSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentSDKSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5CF2968B5D56F044EC6649 /* Pods-PaymentSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentSDKSample.release.xcconfig"; path = "Target Support Files/Pods-PaymentSDKSample/Pods-PaymentSDKSample.release.xcconfig"; sourceTree = "<group>"; };
 		D7E736D1249F836F00A658D1 /* PaymentSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E736D4249F836F00A658D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7E736D6249F836F00A658D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				205B4D6407AF48A085D3A37B /* Pods_PaymentSDKSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		746D6FE4CD03E74AE1A868EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31DE720CA747A3C2D8DEFA45 /* Pods_PaymentSDKSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7EF0902B0928CDF7E26530DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02150C585C350857AEEB3859 /* Pods-PaymentSDKSample.debug.xcconfig */,
+				CD5CF2968B5D56F044EC6649 /* Pods-PaymentSDKSample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D7E736C8249F836F00A658D1 = {
 			isa = PBXGroup;
 			children = (
 				D7E736D3249F836F00A658D1 /* PaymentSDKSample */,
 				D7E736D2249F836F00A658D1 /* Products */,
+				7EF0902B0928CDF7E26530DB /* Pods */,
+				746D6FE4CD03E74AE1A868EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7E736F0249F837000A658D1 /* Build configuration list for PBXNativeTarget "PaymentSDKSample" */;
 			buildPhases = (
+				81A3B789EAD501A4B9AE0C2D /* [CP] Check Pods Manifest.lock */,
 				D7E736CD249F836F00A658D1 /* Sources */,
 				D7E736CE249F836F00A658D1 /* Frameworks */,
 				D7E736CF249F836F00A658D1 /* Resources */,
+				737A7F280A5B835F8C4BCE1A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		737A7F280A5B835F8C4BCE1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaymentSDKSample/Pods-PaymentSDKSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaymentSDKSample/Pods-PaymentSDKSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PaymentSDKSample/Pods-PaymentSDKSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81A3B789EAD501A4B9AE0C2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaymentSDKSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D7E736CD249F836F00A658D1 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		D7E736F1249F837000A658D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02150C585C350857AEEB3859 /* Pods-PaymentSDKSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +369,7 @@
 		};
 		D7E736F2249F837000A658D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD5CF2968B5D56F044EC6649 /* Pods-PaymentSDKSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

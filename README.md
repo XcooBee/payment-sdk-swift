@@ -18,7 +18,7 @@ Touchless smart QRs can be used with users that are directly in vicinity of your
 ## Installation
 
 ### Cocoapods
-[CocoaPods](https://cocoapods.org/) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Alamofire into your Xcode project using CocoaPods, specify it in your Podfile:
+[CocoaPods](https://cocoapods.org/) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate sdk into your Xcode project using CocoaPods, specify it in your Podfile:
 
 `pod install 'XcooBeePaymentSDK'`
 

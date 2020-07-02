@@ -16,7 +16,6 @@
 		D7BE6B0824A8E4FE001E7AE8 /* SecurePay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6B0724A8E4FE001E7AE8 /* SecurePay.swift */; };
 		D7BE6B0A24A8EA7C001E7AE8 /* SecurePayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6B0924A8EA7C001E7AE8 /* SecurePayLogic.swift */; };
 		D7BE6B0F24A930D5001E7AE8 /* SecurePayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6B0E24A930D5001E7AE8 /* SecurePayItem.swift */; };
-		D7C490D124ABB6B200226D33 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D7C490D024ABB6B200226D33 /* LICENSE */; };
 		D7C4913524ABCBE000226D33 /* PaymentSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C4913424ABCBE000226D33 /* PaymentSDKTests.swift */; };
 		D7C4913724ABCBE000226D33 /* PaymentSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E73700249F838900A658D1 /* PaymentSDK.framework */; };
 		D7C4913F24ABCECF00226D33 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C4913E24ABCECF00226D33 /* ErrorHandler.swift */; };
@@ -46,7 +45,6 @@
 		D7BE6B0724A8E4FE001E7AE8 /* SecurePay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurePay.swift; sourceTree = "<group>"; };
 		D7BE6B0924A8EA7C001E7AE8 /* SecurePayLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurePayLogic.swift; sourceTree = "<group>"; };
 		D7BE6B0E24A930D5001E7AE8 /* SecurePayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurePayItem.swift; sourceTree = "<group>"; };
-		D7C490D024ABB6B200226D33 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D7C4913224ABCBE000226D33 /* PaymentSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7C4913424ABCBE000226D33 /* PaymentSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSDKTests.swift; sourceTree = "<group>"; };
 		D7C4913624ABCBE000226D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,7 +82,7 @@
 				D72876CF24AA5BD40036032C /* UrlProvider.swift */,
 				D72876D124AA5BE10036032C /* QRImageProvider.swift */,
 			);
-			path = Providers;
+			name = Providers;
 			sourceTree = "<group>";
 		};
 		D72876D324AA5BEF0036032C /* Extensions */ = {
@@ -92,7 +90,7 @@
 			children = (
 				D72876D424AA5BFF0036032C /* CIImage+Extensions.swift */,
 			);
-			path = Extensions;
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		D7C4913324ABCBE000226D33 /* PaymentSDKTests */ = {
@@ -109,7 +107,7 @@
 			children = (
 				D7C4913E24ABCECF00226D33 /* ErrorHandler.swift */,
 			);
-			path = Helpers;
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		D7E736F6249F838900A658D1 = {
@@ -140,7 +138,6 @@
 				D7E7370B249F83F300A658D1 /* PaymentCore.swift */,
 				D7E73703249F838900A658D1 /* PaymentSDK.h */,
 				D7E73704249F838900A658D1 /* Info.plist */,
-				D7C490D024ABB6B200226D33 /* LICENSE */,
 			);
 			path = PaymentSDK;
 			sourceTree = "<group>";
@@ -157,7 +154,7 @@
 				D72876D624AA631E0036032C /* XcooBeeQRConfig.swift */,
 				D72876D824AA70A10036032C /* Constants.swift */,
 			);
-			path = Models;
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +257,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7C490D124ABB6B200226D33 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
