@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "PaymentSDK"
+  spec.name         = "XcooBeePaymentSdk"
   spec.version      = "1.0.0"
   spec.summary      = "XcooBee Payment SDK for Swift and iOS"
 
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-Test description
+The XcooBee payment SDK allows you to quickly create contactless payments QR and URL that can be processed in your app. You can use XcooBee to configure accepted payment processors and methods. This simplifies the implementation of payments in apps and makes it safer for your users.
                    DESC
 
   spec.homepage     = "https://github.com/XcooBee/payment-sdk-swift"
@@ -39,7 +39,7 @@ Test description
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = { :type => 'MIT', :file => 'LICENSE' }
+  spec.license = { :type => 'Apache License, Version 2.0', :file => 'LICENSE' }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -52,10 +52,7 @@ Test description
   #  profile URL.
   #
 
-  spec.author             = { "XcooBee" => "email@address.com" }
-  # Or just: spec.author    = "XcooBee"
-  # spec.authors            = { "XcooBee" => "email@address.com" }
-  # spec.social_media_url   = "https://twitter.com/XcooBee"
+  spec.author             = { "XcooBee" => "support@xcoobee.com" }
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

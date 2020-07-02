@@ -6,6 +6,6 @@ project 'PaymentSDKSample.xcodeproj'
 
 target 'PaymentSDKSample' do
   use_frameworks!
-  pod 'PaymentSDK', :path => '../'
+  pod 'XcooBeePaymentSdk', :path => '../'
 end
 
